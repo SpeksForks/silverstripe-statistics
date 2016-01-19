@@ -1,6 +1,8 @@
 Realtime statistics for Silverstripe
 ====================================
 
+[![Build Status](https://travis-ci.org/notthatbad/silverstripe-statistics.svg?branch=master)](https://travis-ci.org/notthatbad/silverstripe-statistics)
+
 This module makes it possible to create powerful dashboards about your application statistics with services like graphite and grafana.
 
 For this purpose, the module contains a task system, that can be automatically run from a commandline through a script. On every run, the
