@@ -3,10 +3,12 @@ Name: realtime_statistics
 After:
   - 'mysite/*'
 ---
-AdapterFactory:
-  Adapter: Ntb\Statistics\BlackholeAdapter
-  Host: localhost
-  Port: 2003
+Injector:
+  StatisticAdapter:
+    class: Ntb\Statistics\BlackholeAdapter
+    properties:
+      host: localhost
+      port: 2003
 
 StatisticTask:
   Separator: .

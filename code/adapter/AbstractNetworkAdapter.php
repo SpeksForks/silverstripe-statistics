@@ -6,33 +6,29 @@ namespace Ntb\Statistics;
  *
  * @package Ntb\Statistics
  */
-abstract class AbstractNetworkAdapter extends \Object {
+abstract class AbstractNetworkAdapter extends \Object implements IStatisticAdapter {
     /**
      *
      * @var string
      */
-    protected $host;
+    public $host;
 
     /**
      * @var int
      */
-    protected $port;
+    public $port;
 
     /**
      * @var resource
      */
     protected $socket;
 
-    /**
-     * @param string $host
-     * @param int $port
-     */
-    public function __construct($host, $port) {
-        parent::__construct();
+    static $dependencies = [
+        'host'        => 'localhost',
+        'port'        => '2003'
+    ];
 
-        $this->host = $host;
-        $this->port = $port;
-
+    public function init() {
         $this->socket = $this->createSocket();
     }
 

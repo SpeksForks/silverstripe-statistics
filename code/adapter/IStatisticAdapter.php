@@ -20,4 +20,9 @@ interface IStatisticAdapter {
      * @param IIndicator[] $indicators
      */
     public function send($indicators);
+
+    /**
+     * Initializes the connection to external resources.
+     */
+    public function init();
 }

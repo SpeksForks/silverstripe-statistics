@@ -7,7 +7,7 @@ namespace Ntb\Statistics;
  *
  * @package Ntb\Statistics
  */
-class StatsDAdapter extends AbstractNetworkAdapter implements IStatisticAdapter {
+class StatsDAdapter extends AbstractNetworkAdapter {
 
     /**
      * @param $data

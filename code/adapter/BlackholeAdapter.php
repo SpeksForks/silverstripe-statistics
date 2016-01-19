@@ -22,4 +22,11 @@ class BlackholeAdapter extends \Object implements IStatisticAdapter {
     public function send($indicators) {
         print_r($indicators);
     }
+
+    /**
+     * Initializes the connection to external resources.
+     */
+    public function init() {
+        // nop
+    }
 }

@@ -1,15 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: squad
- * Date: 09.08.15
- * Time: 10:11
- */
 
 namespace Ntb\Statistics;
 
 /**
- * Factor for the different statistic indicators.
+ * Factory for the different statistic indicators.
  * @package Ntb\Statistics
  */
 class IndicatorFactory {

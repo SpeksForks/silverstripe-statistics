@@ -6,12 +6,12 @@ class IndicatorFactoryTest extends SapphireTest {
 
     public function testIndicatorCreation() {
         $indicators = \Ntb\Statistics\IndicatorFactory::get_all();
-
         $this->assertTrue(count($indicators) >= 1);
         $filtered = array_filter($indicators, function($indicator) {
             return $indicator instanceof TestIndicator;
         });
-
+        /** @var IIndicator[] $filtered */
+        $filtered = array_values($filtered);
         $this->assertEquals(1, count($filtered));
         $this->assertEquals(1, $filtered[0]->fetch());
         $this->assertEquals("test.t", $filtered[0]->name());
