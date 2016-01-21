@@ -5,6 +5,7 @@ namespace Ntb\Statistics;
 /**
  * Factory for the different statistic indicators.
  * @package Ntb\Statistics
+ * @author Christian Blank <c.blank@notthatbad.net>
  */
 class IndicatorFactory {
     /**

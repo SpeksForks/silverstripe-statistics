@@ -2,7 +2,11 @@
 
 namespace Ntb\Statistics;
 
-
+/**
+ * Class BlackholeAdapter
+ * @package Ntb\Statistics
+ * @author Christian Blank <c.blank@notthatbad.net>
+ */
 class BlackholeAdapter extends \Object implements IStatisticAdapter {
 
     /**

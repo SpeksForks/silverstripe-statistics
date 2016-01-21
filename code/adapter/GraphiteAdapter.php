@@ -6,6 +6,7 @@ namespace Ntb\Statistics;
  * An adapter that can connect to graphite service.
  *
  * @package Ntb\Statistics
+ * @author Christian Blank <c.blank@notthatbad.net>
  */
 class GraphiteAdapter extends AbstractNetworkAdapter implements IStatisticAdapter {
 

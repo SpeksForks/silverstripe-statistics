@@ -6,6 +6,7 @@ namespace Ntb\Statistics;
  * Adapter factory for creating statistic adapters.
  *
  * @package Ntb\Statistics
+ * @author Christian Blank <c.blank@notthatbad.net>
  */
 class AdapterFactory {
     /**

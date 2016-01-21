@@ -3,8 +3,9 @@
 namespace Ntb\Statistics;
 
 /**
- *
+ * Class AbstractNetworkAdapter
  * @package Ntb\Statistics
+ * @author Christian Blank <c.blank@notthatbad.net>
  */
 abstract class AbstractNetworkAdapter extends \Object implements IStatisticAdapter {
     /**

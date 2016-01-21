@@ -5,6 +5,7 @@ namespace Ntb\Statistics;
 /**
  * Interface IStatisticAdapter
  * @package Ntb\Statistics
+ * @author Christian Blank <c.blank@notthatbad.net>
  */
 interface IStatisticAdapter {
     /**
